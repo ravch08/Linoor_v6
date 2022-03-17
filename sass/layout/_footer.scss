@@ -1,0 +1,130 @@
+footer {
+  padding: 8rem 0;
+  background-color: $color-footerBar;
+  background-image: url(../../images/footer-bg-1-1.png);
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+}
+
+.footer-wrapper {
+  flex-wrap: wrap;
+  @extend .flexRow-start;
+
+  p,
+  .ftr-links,
+  .contact-link {
+    font-weight: 100;
+    font-size: 1.5rem;
+    color: $color-text-secondary;
+  }
+
+  .contact-link {
+    font-size: 1.6rem;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color: $color-light-100;
+  }
+
+  .ftr-links {
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100%;
+      left: 0;
+      bottom: 0;
+      height: 0.1rem;
+      position: absolute;
+      transform: scaleX(0) translateY(0.5rem);
+      transform-origin: left center;
+      transition: transform 0.5s ease;
+      background-color: $color-light-100;
+    }
+
+    &:hover::before {
+      transform: scaleX(1) translateY(0.5rem);
+      transform-origin: right center;
+    }
+  }
+
+  .ftr-nav-list,
+  .footer-items {
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+}
+
+.footer-bar {
+  padding: 2.5rem 0;
+  background-color: $color-Dark-400;
+
+  .footer-bar-wrapper {
+    @extend .flexRow-between;
+  }
+}
+
+.scrollTop {
+  border: none;
+  bottom: 1.5%;
+  right: 4%;
+  z-index: 99;
+  width: 5.5rem;
+  height: 5.5rem;
+  cursor: pointer;
+  position: fixed;
+  border-radius: 50%;
+  transform: scale(1);
+  @extend .flexRow-center;
+  box-shadow: $box-shadow-md;
+  background-color: $color-primary;
+  transition: background-color 0.3s ease-in-out, transform 0.4s ease-in-out;
+
+  svg {
+    fill: $color-light-100;
+  }
+
+  &:hover {
+    background-color: darken($color: $color-primary, $amount: 5%);
+  }
+}
+
+.scaleDown {
+  transform: scale(0);
+}
+
+// -- MEDIA QUERIES -------------------------------------------------------------------
+
+@media screen and (max-width: 576px) {
+  .footer-wrapper {
+    gap: 4rem;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 5rem 0;
+  }
+
+  .footer-wrapper {
+    gap: 4rem;
+    flex-wrap: wrap;
+
+    .ftr-nav-list {
+      gap: 1rem;
+    }
+  }
+
+  .footer-bar-wrapper {
+    gap: 1.5rem;
+    flex-direction: column;
+  }
+}

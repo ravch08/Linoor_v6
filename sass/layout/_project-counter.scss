@@ -1,0 +1,117 @@
+.counters {
+  @extend .flexRow-between;
+
+  .counter {
+    width: 21rem;
+    height: 21rem;
+    border-radius: 50%;
+    box-shadow: $box-shadow-sm;
+    @extend .flexColumn-center;
+    transition: box-shadow 0.3s ease-in-out, outline 0.3s ease-in-out;
+
+    &:nth-child(1) {
+      outline: lighten($color: $color-primary, $amount: 28%) solid 0.8rem;
+      outline-offset: -2rem;
+
+      p {
+        color: $color-primary;
+      }
+    }
+
+    &:nth-child(2) {
+      outline: lighten($color: $color-secondary, $amount: 28%) solid 0.8rem;
+      outline-offset: -2rem;
+
+      p {
+        color: $color-secondary;
+      }
+    }
+
+    &:nth-child(3) {
+      outline: lighten($color: $color-tertiary, $amount: 28%) solid 0.8rem;
+      outline-offset: -2rem;
+
+      p {
+        color: $color-tertiary;
+      }
+    }
+
+    &:nth-child(4) {
+      outline: lighten($color: $color-quarternary, $amount: 28%) solid 0.8rem;
+      outline-offset: -2rem;
+
+      p {
+        color: $color-quarternary;
+      }
+    }
+
+    span {
+      font-size: 4rem;
+      color: $color-Dark-800;
+    }
+
+    p {
+      font-size: 1.4rem;
+      margin: 0.2rem 0;
+      letter-spacing: 0.15rem;
+    }
+
+    &:hover {
+      box-shadow: $box-shadow-md;
+
+      &:nth-child(1) {
+        outline: $color-primary solid 0.8rem;
+      }
+
+      &:nth-child(2) {
+        outline: $color-secondary solid 0.8rem;
+      }
+
+      &:nth-child(3) {
+        outline: $color-tertiary solid 0.8rem;
+      }
+
+      &:nth-child(4) {
+        outline: $color-quarternary solid 0.8rem;
+      }
+    }
+  }
+}
+
+#sponsers {
+  padding: 8rem 0;
+  border-top: 0.2rem solid #dbdbdb3d;
+
+  img {
+    opacity: 0.3;
+    filter: grayscale(1);
+    transition: opacity 0.3s ease-in-out, filter 0.3s ease-in-out;
+
+    &:hover {
+      opacity: 0.9;
+      filter: grayscale(0);
+    }
+  }
+
+  .swiper-slide {
+    max-width: 120px;
+    padding: 0 2rem;
+  }
+}
+
+// -------- MEDIA QUERIES --------------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+  .counters {
+    gap: 3rem;
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .counters {
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

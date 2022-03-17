@@ -1,0 +1,101 @@
+.blog-wrapper {
+  gap: 2rem;
+  @extend .flexRow-between;
+
+  figure {
+    overflow: hidden;
+    border-radius: 0.6rem 0.6rem 0 0;
+
+    img {
+      max-width: unset;
+      border-radius: 0.6rem 0.6rem 0 0;
+    }
+  }
+}
+
+.blog-item {
+  max-width: 350px;
+  position: relative;
+  transition: border 0.5s ease-in-out;
+
+  svg {
+    fill: $color-primary;
+    margin-right: 0.3rem;
+  }
+
+  span {
+    padding: 0 0.8rem 0 0;
+  }
+
+  h3 {
+    padding-top: 1rem;
+  }
+
+  .blog-content {
+    position: relative;
+    padding: 2.5rem 2rem;
+    border: 0.1rem solid $color-light-400;
+    border-top: none;
+    background-color: $color-light-100;
+    transition: border 0.5s ease-in-out;
+  }
+
+  .date {
+    top: -32%;
+    left: 6%;
+    padding: 1rem 2rem 2rem;
+    position: absolute;
+    border-radius: 0.5rem;
+    background-color: $color-light-100;
+  }
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 1.8rem;
+    position: absolute;
+    bottom: -3%;
+    left: 0;
+    z-index: -1;
+    border-radius: 0 0 0.6rem 0.6rem;
+    background-color: $color-light-400;
+    border: 0.2rem solid $color-light-400;
+    transition: border 0.5s ease-in-out, background-color 0.5s ease-in-out;
+  }
+
+  &:hover {
+    .blog-content {
+      border: 0.1rem solid $color-secondary;
+      border-top: none;
+    }
+
+    &::after {
+      background-color: $color-secondary;
+      border: 0.2rem solid $color-secondary;
+    }
+  }
+}
+
+// -- MEDIA QUERIES -------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+  .blog-wrapper {
+    gap: 5rem;
+    flex-direction: column;
+  }
+
+  .blog-item {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .blog-wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .blog-item {
+    width: 300px;
+    margin-bottom: 3rem;
+  }
+}

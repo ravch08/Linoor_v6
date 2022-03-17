@@ -1,0 +1,89 @@
+// CLASS DEFAULTS ----------------------------------------------------------------------------------
+
+.container {
+  width: 85%;
+  height: auto;
+  margin: 0 auto;
+  max-width: $width-container;
+}
+
+.container-fluid {
+  width: 95%;
+  margin-inline: auto;
+}
+
+.heading {
+  margin-bottom: 5rem;
+}
+
+.social-icons {
+  gap: 2.5rem;
+  @extend .flexRow-center;
+
+  svg {
+    fill: $color-light-100;
+    transition: fill 0.3s ease-in-out;
+    &:hover {
+      fill: $color-primary;
+    }
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(5rem);
+  transition: transform 0.6s ease-in, opacity 0.7s ease-in;
+
+  &.appear {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-5rem);
+  transition: transform 0.6s ease-in, opacity 0.7s ease-in;
+
+  &.appear {
+    opacity: 1;
+    transform: translateY(0rem);
+  }
+}
+
+.container-semifluid {
+  width: 90%;
+  margin-inline: auto;
+}
+
+section {
+  padding: $section-padding 0;
+}
+
+.pr-05 {
+  padding-right: 0.5rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.pl-05 {
+  padding-left: 0.5rem;
+}
+
+.pl-2 {
+  padding-left: 2rem;
+}
+
+.w-100 {
+  max-width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+}

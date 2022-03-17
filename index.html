@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;800&family=Teko:wght@300&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="sass/swiper-bundle.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <script defer src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/main.js"></script>
+
+    <title>Linoor</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="container-fluid">
+            <div class="header-wrapper">
+
+                <div class="navigation">
+                    <a href="index.html" class="nav-brand">
+                        <img src="images/logo-dark.png" alt="Linoor Logo">
+                    </a>
+
+                    <nav aria-labelledby="Primary Navigation">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">About Us</a></li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Services</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Website Development</a>
+                                    </li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">App Development</a></li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">UI/UX Design</a></li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">SEO & Content
+                                            Writing</a>
+                                    </li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Graphic Design</a></li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Digital Marketing</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Portfolio</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Portfolio 1</a></li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Portfolio 2</a></li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Portfolio 3</a></li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Portfolio 4</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link">Blog</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Shop</a></li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Product Detail</a></li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Cart</a></li>
+                                    <li class="dropdown-item"><a href="#" class="dropdown-link">Checkout</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="menu">
+
+                    <a href="#" class="search">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512">
+                            <path
+                                d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z" />
+                        </svg>
+                    </a>
+
+                    <div class="hamburger-menu">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </div>
+
+                <div class="sidebar-overlay"></div>
+
+                <div class="sidebar">
+                    <div class="sidebar-wrapper">
+
+                        <div class="d-flex">
+                            <a href="index.html" class="nav-brand"><img src="images/logo-light.png" width="120"
+                                    alt="Linoor logo light"></a>
+                            <a href="#" class="btn-close">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 352 512">
+                                    <path
+                                        d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                        <nav aria-labelledby="Secondary Navigation">
+
+                            <ul class="nav-list">
+                                <li class="sidebar-item"><a href="#" class="sidebar-link">Home</a></li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link">About Us</a></li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Services
+                                        <figure>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12"
+                                                viewBox="0 0 256 512">
+                                                <path
+                                                    d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                                            </svg>
+                                        </figure>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Website
+                                                Development</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">App Development</a>
+                                        </li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">UI/UX Design</a>
+                                        </li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">SEO & Content
+                                                Writing</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Graphic Design</a>
+                                        </li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Digital
+                                                Marketing</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Portfolio
+                                        <figure>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 256 512">
+                                                <path
+                                                    d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                                            </svg>
+                                        </figure>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Portfolio 1</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Portfolio 2</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Portfolio 3</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Portfolio 4</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar-item">
+                                    <a href="#" class="sidebar-link">Blog
+                                        <figure>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="12"
+                                                viewBox="0 0 256 512">
+                                                <path
+                                                    d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+                                            </svg>
+                                        </figure>
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Shop</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Product Detail</a>
+                                        </li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Cart</a></li>
+                                        <li class="dropdown-item"><a href="#" class="dropdown-link">Checkout</a></li>
+                                    </ul>
+                                </li>
+                                <li class="sidebar-item"><a href="#" class="sidebar-link">Contact</a></li>
+                            </ul>
+                        </nav>
+
+                        <div class="sidebar-info">
+                            <p>Linoor is a premium Template for Digital Agencies, Start Ups, Small Business and a wide
+                                range
+                                of other agencies.</p>
+                            <a href="#" class="contact-link">needhelp@linoor.com</a>
+                            <a href="#" class="contact-link">888 999 0000</a>
+                        </div>
+
+                        <div class="social-icons">
+                            <a href="#" class="social-links">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-links">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 448 512">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-links">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 448 512">
+                                    <path
+                                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                                </svg>
+                            </a>
+                            <a href="#" class="social-links">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 496 512">
+                                    <path
+                                        d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <section id="banner" aria-labelledby="Slider">
+
+            <div class="shapes">
+                <div class="shape-1"></div>
+                <div class="shape-2"></div>
+                <div class="shape-3"></div>
+                <div class="shape-4"></div>
+            </div>
+
+            <div class="swiper" id="swiper-banner">
+
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner-content">
+                            <h1>We Deliver the <br> <strong>Quality</strong> SEO Links.</h1>
+                            <p>We’re committed to providing customers exceptional service offering employees the best
+                                training. <br>
+
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ut numquam culpa
+                                pariatur similique quaerat?
+                            </p>
+                            <button class="btn-gradient">DISCOVER MORE</button>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 768px) and (max-width: 1024px)"
+                                srcset="images/slider-bg-768.png, images/slider-1-768.png">
+                            <source media="(max-width: 767px)" srcset="images/slider-576-bg.png">
+                            <img src="images/slider-bg.png" class="slider-bg" alt="slider-bg">
+                            <img src="images/slider-1.png" class="slider-img" alt="slider-image">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner-content">
+                            <h1>We Deliver the <br> <strong>Quality</strong> SEO Links.</h1>
+                            <p>We’re committed to providing customers exceptional service offering employees the best
+                                training.<br>
+
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda ut numquam culpa
+                                pariatur similique quaerat?
+                            </p>
+                            <button class="btn-gradient">DISCOVER MORE</button>
+                        </div>
+                        <picture>
+                            <source media="(min-width: 768px) and (max-width: 1024px)"
+                                srcset="images/slider-bg-768.png, images/slider-2-768.png">
+                            <source media="(max-width: 767px)" srcset="images/slider-576-bg.png">
+                            <img src="images/slider-bg.png" class="slider-bg" alt="slider bg">
+                            <img src="images/slider-2.png" class="slider-img" alt="slider image">
+                        </picture>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="features" aria-labelledby="Features">
+            <div class="container">
+
+                <div class="heading text-center fade-in">
+                    <h2>Checkout Our <strong>Company</strong> <br> Features Below</h2>
+                </div>
+
+                <div class="feature-list">
+
+                    <div class="feature-item text-center slide-in">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 576 512">
+                                <path
+                                    d="M288 32C128.94 32 0 160.94 0 320c0 52.8 14.25 102.26 39.06 144.8 5.61 9.62 16.3 15.2 27.44 15.2h443c11.14 0 21.83-5.58 27.44-15.2C561.75 422.26 576 372.8 576 320c0-159.06-128.94-288-288-288zm0 64c14.71 0 26.58 10.13 30.32 23.65-1.11 2.26-2.64 4.23-3.45 6.67l-9.22 27.67c-5.13 3.49-10.97 6.01-17.64 6.01-17.67 0-32-14.33-32-32S270.33 96 288 96zM96 384c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm48-160c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32zm246.77-72.41l-61.33 184C343.13 347.33 352 364.54 352 384c0 11.72-3.38 22.55-8.88 32H232.88c-5.5-9.45-8.88-20.28-8.88-32 0-33.94 26.5-61.43 59.9-63.59l61.34-184.01c4.17-12.56 17.73-19.45 30.36-15.17 12.57 4.19 19.35 17.79 15.17 30.36zm14.66 57.2l15.52-46.55c3.47-1.29 7.13-2.23 11.05-2.23 17.67 0 32 14.33 32 32s-14.33 32-32 32c-11.38-.01-20.89-6.28-26.57-15.22zM480 384c-17.67 0-32-14.33-32-32s14.33-32 32-32 32 14.33 32 32-14.33 32-32 32z" />
+                            </svg>
+                        </figure>
+                        <h3>Speed Optimization</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, commodi.</p>
+                        <button class="btn-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+                                <path
+                                    d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="feature-item text-center slide-in">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                                <path
+                                    d="M500 384c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H12c-6.6 0-12-5.4-12-12V76c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v308h436zM372.7 159.5L288 216l-85.3-113.7c-5.1-6.8-15.5-6.3-19.9 1L96 248v104h384l-89.9-187.8c-3.2-6.5-11.4-8.7-17.4-4.7z" />
+                            </svg>
+                        </figure>
+                        <h3>Market Analysis</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, commodi.</p>
+                        <button class="btn-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+                                <path
+                                    d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="feature-item text-center slide-in">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                                <path
+                                    d="M288 256C288 273.7 273.7 288 256 288C238.3 288 224 273.7 224 256C224 238.3 238.3 224 256 224C273.7 224 288 238.3 288 256zM112 256C112 176.5 176.5 112 256 112C335.5 112 400 176.5 400 256C400 335.5 335.5 400 256 400C176.5 400 112 335.5 112 256zM256 336C300.2 336 336 300.2 336 256C336 211.8 300.2 176 256 176C211.8 176 176 211.8 176 256C176 300.2 211.8 336 256 336zM512 256C512 397.4 397.4 512 256 512C114.6 512 0 397.4 0 256C0 114.6 114.6 0 256 0C397.4 0 512 114.6 512 256zM256 64C149.1 64 64 149.1 64 256C64 362 149.1 448 256 448C362 448 448 362 448 256C448 149.1 362 64 256 64z" />
+                            </svg>
+                        </figure>
+                        <h3>SEO & Backlinks</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, commodi.</p>
+                        <button class="btn-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+                                <path
+                                    d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="feature-item text-center slide-in">
+                        <figure>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 512 512">
+                                <path
+                                    d="M492.7 58.75C517.7 83.74 517.7 124.3 492.7 149.3L440.6 201.4L310.6 71.43L362.7 19.32C387.7-5.678 428.3-5.678 453.3 19.32L492.7 58.75zM240.1 114.9C231.6 105.5 216.4 105.5 207 114.9L104.1 216.1C95.6 226.3 80.4 226.3 71.03 216.1C61.66 207.6 61.66 192.4 71.03 183L173.1 80.97C201.2 52.85 246.8 52.85 274.9 80.97L417.9 224L229.5 412.5C181.5 460.5 120.3 493.2 53.7 506.5L28.71 511.5C20.84 513.1 12.7 510.6 7.03 504.1C1.356 499.3-1.107 491.2 .4662 483.3L5.465 458.3C18.78 391.7 51.52 330.5 99.54 282.5L254.1 128L240.1 114.9z" />
+                            </svg>
+                        </figure>
+                        <h3>Content Marketing</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, commodi.</p>
+                        <button class="btn-arrow">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512">
+                                <path
+                                    d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z" />
+                            </svg>
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="services" aria-labelledby="Services">
+            <div class="container">
+
+                <div class="service-wrapper">
+                    <figure class="fade-in"><img src="images/about-eight-1-1.png" alt="about-eight-1-1"></figure>
+
+                    <div class="service-content fade-in">
+                        <h2>Powerful <strong>Tools</strong> for <br> Your Customers</h2>
+                        <h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur.
+                        </h3>
+
+                        <ul class="service-list">
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 512 512">
+                                    <path
+                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                </svg>
+                                Refresing to get such a personal touch.
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 512 512">
+                                    <path
+                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                </svg>
+                                Duis aute irure dolor in
+                                reprehenderit in
+                                voluptate.
+                            </li>
+                            <li>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" viewBox="0 0 512 512">
+                                    <path
+                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z" />
+                                </svg>
+                                Velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="service-wrapper">
+                    <div class="service-content fade-in">
+                        <h2>Control <strong>Everything</strong> from One Solution</h2>
+                        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. fur hat and fur boa who sat upright, raising a heavy fur muff that covered.
+                        </p>
+
+                        <div class="service-progressbar">
+                            <label for="file">Marketing</label>
+                            <progress value="70" max="100"> 70% </progress>
+
+                            <label for="file">SEO Optimization</label>
+                            <progress value="89" max="100"> 89% </progress>
+                        </div>
+
+                        <button class="btn-gradient">GET STARTED</button>
+                    </div>
+
+                    <figure class="fade-in"><img src="images//about-nine-1-1.png" alt="about-nine-1-1"></figure>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="projects" aria-labelledby="Recent Projects">
+            <div class="container">
+
+                <div class="heading text-center fade-in">
+                    <h2>Our Recent <strong>Projects</strong> <br> List Below.</h2>
+                </div>
+
+                <div class="project-wrapper">
+
+                    <div class="project-item fade-in">
+                        <figure><img src="images/project-2-1.jpg" alt="project"></figure>
+
+                        <div class="project-info">
+                            <small>SEO, Marketing</small>
+                            <h3>Digital Marketing</h3>
+                        </div>
+
+                        <button class="btn btn-arrow"><img src="images/btn-arrow.svg" alt="arrow"></button>
+                    </div>
+
+                    <div class="project-item fade-in">
+                        <figure><img src="images/project-2-2.jpg" alt="project"></figure>
+
+                        <div class="project-info">
+                            <small>SEO, Marketing</small>
+                            <h3>Website Development</h3>
+                        </div>
+
+                        <button class="btn btn-arrow"><img src="images/btn-arrow.svg" alt="arrow"></button>
+                    </div>
+
+                    <div class="project-item fade-in">
+                        <figure><img src="images/project-2-3.jpg" alt="project"></figure>
+
+                        <div class="project-info">
+                            <small>SEO, Marketing</small>
+                            <h3>Apps Development</h3>
+                        </div>
+
+                        <button class="btn btn-arrow"><img src="images/btn-arrow.svg" alt="arrow"></button>
+                    </div>
+
+                    <div class="project-item fade-in">
+                        <figure><img src="images/project-2-4.jpg" alt="project"></figure>
+
+                        <div class="project-info">
+                            <small>SEO, Marketing</small>
+                            <h3>Content Writing</h3>
+                        </div>
+
+                        <button class="btn btn-arrow"><img src="images/btn-arrow.svg" alt="arrow"></button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="pricing" aria-labelledby="Pricing Plans">
+            <div class="container">
+
+                <div class="heading text-center fade-in">
+                    <h2>Choose <strong>Pricing Plans</strong> <br> Which Suits Your Needs </h2>
+                </div>
+
+                <ul class="pricing-switch fade-in">
+
+                    <li><a href="#">Monthly</a></li>
+                    <li>
+                        <label class="switch">
+                            <span class="slider-round"></span>
+                        </label>
+                    </li>
+                    <li><a href="#">Yearly</a></li>
+
+                </ul>
+
+                <div class="pricing-content">
+
+                    <div class="pricing-monthly active">
+
+                        <div class="pricing-item fade-in">
+                            <h3>$20.00</h3>
+                            <span>BASIC PACK</span>
+                            <hr>
+                            <ul class="pricing-list">
+                                <li>Extra features</li>
+                                <li>Lifetime free support</li>
+                                <li>Upgrade Options</li>
+                                <li>Full Access</li>
+                            </ul>
+                            <button class="btn-gradient">CHOOSE A PLAN</button>
+                            <p>NO HIDDEN CHARGES</p>
+                        </div>
+
+                        <div class="pricing-item fade-in">
+                            <h3>$30.00</h3>
+                            <span>MEDIUM PACK</span>
+                            <hr>
+                            <ul class="pricing-list">
+                                <li>Extra features</li>
+                                <li>Lifetime free support</li>
+                                <li>Upgrade Options</li>
+                                <li>Full Access</li>
+                            </ul>
+                            <button class="btn-gradient">CHOOSE A PLAN</button>
+                            <p>NO HIDDEN CHARGES</p>
+                        </div>
+
+                        <div class="pricing-item fade-in">
+                            <h3>$40.00</h3>
+                            <span>PREMIUM PACK</span>
+                            <hr>
+                            <ul class="pricing-list">
+                                <li>Extra features</li>
+                                <li>Lifetime free support</li>
+                                <li>Upgrade Options</li>
+                                <li>Full Access</li>
+                            </ul>
+                            <button class="btn-gradient">CHOOSE A PLAN</button>
+                            <p>NO HIDDEN CHARGES</p>
+                        </div>
+
+                    </div>
+
+                    <div class="pricing-yearly hide">
+
+                        <div class="pricing-item fade-in">
+                            <h3>$99.00</h3>
+                            <span>BASIC PACK</span>
+                            <hr>
+                            <ul class="pricing-list">
+                                <li>Extra features</li>
+                                <li>Lifetime free support</li>
+                                <li>Upgrade Options</li>
+                                <li>Full Access</li>
+                            </ul>
+                            <button class="btn-gradient">CHOOSE A PLAN</button>
+                            <p>NO HIDDEN CHARGES</p>
+                        </div>
+
+                        <div class="pricing-item fade-in">
+                            <h3>$199.00</h3>
+                            <span>MEDIUM PACK</span>
+                            <hr>
+                            <ul class="pricing-list">
+                                <li>Extra features</li>
+                                <li>Lifetime free support</li>
+                                <li>Upgrade Options</li>
+                                <li>Full Access</li>
+                            </ul>
+                            <button class="btn-gradient">CHOOSE A PLAN</button>
+                            <p>NO HIDDEN CHARGES</p>
+                        </div>
+
+                        <div class="pricing-item fade-in">
+                            <h3>$299.00</h3>
+                            <span>PREMIUM PACK</span>
+                            <hr>
+                            <ul class="pricing-list">
+                                <li>Extra features</li>
+                                <li>Lifetime free support</li>
+                                <li>Upgrade Options</li>
+                                <li>Full Access</li>
+                            </ul>
+                            <button class="btn-gradient">CHOOSE A PLAN</button>
+                            <p>NO HIDDEN CHARGES</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section id="project-counter" aria-labelledby="Completed Projects">
+            <div class="container">
+
+                <div class="heading text-center fade-in">
+                    <h2>Over 2200 <strong>Projects</strong> <br> Completed</h2>
+                </div>
+
+                <div class="counters">
+
+                    <div class="counter fade-in">
+                        <span>4789</span>
+                        <p>PROJECTS</p>
+                    </div>
+                    <div class="counter fade-in">
+                        <span>6400</span>
+                        <p>CUSTOMERS</p>
+                    </div>
+                    <div class="counter fade-in">
+                        <span>960</span>
+                        <p>SUCCESS</p>
+                    </div>
+                    <div class="counter fade-in">
+                        <span>378</span>
+                        <p>AWARDS</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsers" aria-labelledby="Sponsers">
+            <div class="container">
+                <div class="swiper fade-in" id="swiper-sponser">
+
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide text-center"><img src="images/sponsor-1-1.png" width="120"
+                                alt="envato">
+                        </div>
+                        <div class="swiper-slide text-center"><img src="images/sponsor-1-1.png" width="120"
+                                alt="envato">
+                        </div>
+                        <div class="swiper-slide text-center"><img src="images/sponsor-1-1.png" width="120"
+                                alt="envato">
+                        </div>
+                        <div class="swiper-slide text-center"><img src="images/sponsor-1-1.png" width="120"
+                                alt="envato">
+                        </div>
+                        <div class="swiper-slide text-center"><img src="images/sponsor-1-1.png" width="120"
+                                alt="envato">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" aria-labelledby="What clients say about us">
+            <div class="container-semifluid">
+
+                <div class="heading text-center fade-in">
+                    <h2>What our <strong>Clients</strong> <br> say About the Work </h2>
+                </div>
+
+                <div class="swiper fade-in" id="swiper-testimonial">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+
+                            <div class="swiper-author">
+                                <figure><img src="images/author-2.jpg" alt="author"></figure>
+
+                                <div class="author">
+                                    <h3>Shirley Smith</h3>
+                                    <small>Director</small>
+                                </div>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="quote" width="50" viewBox="0 0 512 512">
+                                <path
+                                    d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z" />
+                            </svg>
+
+                            <blockquote>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia earum optio
+                                quisquam quasi, sit iure tenetur aliquam libero maxime asperiores dolor quam rerum
+                                nostrum esse omnis!
+                            </blockquote>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="swiper-author">
+                                <figure><img src="images/author-3.jpg" alt="author"></figure>
+
+                                <div class="author">
+                                    <h3>Sarah Albert</h3>
+                                    <small>Director</small>
+                                </div>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="quote" width="50" viewBox="0 0 512 512">
+                                <path
+                                    d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z" />
+                            </svg>
+
+                            <blockquote>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia earum optio
+                                quisquam quasi, sit iure tenetur aliquam libero maxime asperiores dolor quam rerum
+                                nostrum esse omnis!
+                            </blockquote>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="swiper-author">
+                                <figure><img src="images/author-4.jpg" alt="author"></figure>
+
+                                <div class="author">
+                                    <h3>Mike Hardson</h3>
+                                    <small>Director</small>
+                                </div>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="quote" width="50" viewBox="0 0 512 512">
+                                <path
+                                    d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z" />
+                            </svg>
+
+                            <blockquote>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia earum optio
+                                quisquam quasi, sit iure tenetur aliquam libero maxime asperiores dolor quam rerum
+                                nostrum esse omnis!
+                            </blockquote>
+                        </div>
+
+                        <div class="swiper-slide">
+
+                            <div class="swiper-author">
+                                <figure><img src="images/author-5.jpg" alt="author"></figure>
+
+                                <div class="author">
+                                    <h3>Kevin Martin</h3>
+                                    <small>Director</small>
+                                </div>
+                            </div>
+
+                            <svg xmlns="http://www.w3.org/2000/svg" class="quote" width="50" viewBox="0 0 512 512">
+                                <path
+                                    d="M464 32H336c-26.5 0-48 21.5-48 48v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48zm-288 0H48C21.5 32 0 53.5 0 80v128c0 26.5 21.5 48 48 48h80v64c0 35.3-28.7 64-64 64h-8c-13.3 0-24 10.7-24 24v48c0 13.3 10.7 24 24 24h8c88.4 0 160-71.6 160-160V80c0-26.5-21.5-48-48-48z" />
+                            </svg>
+
+                            <blockquote>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia earum optio
+                                quisquam quasi, sit iure tenetur aliquam libero maxime asperiores dolor quam rerum
+                                nostrum esse omnis!
+                            </blockquote>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="blog" aria-labelledby="Blog">
+            <div class="container">
+
+                <div class="heading text-center fade-in">
+                    <h2>Latest News & <strong>Articles</strong> <br> from the Blog </h2>
+                </div>
+
+                <div class="blog-wrapper">
+
+                    <div class="blog-item slide-in">
+                        <figure><img src="images/blog-post-1-370x316.jpg" alt="blog-post-1-370x316"></figure>
+
+                        <div class="blog-content">
+                            <div class="d-flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 496 512">
+                                    <path
+                                        d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z" />
+                                </svg>
+                                <span>by Ashikur</span>
+                                <span>/</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 576 512">
+                                    <path
+                                        d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z" />
+                                </svg>
+                                <span>2 Comments</span>
+                            </div>
+
+                            <div class="date">13 Jan, 21</div>
+
+                            <h3>Leverage agile provide to a robust</h3>
+                        </div>
+                    </div>
+
+                    <div class="blog-item slide-in">
+                        <figure><img src="images/blog-post-2-370x316.jpg" alt="blog-post-1-370x316"></figure>
+                        <div class="blog-content">
+                            <div class="d-flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 496 512">
+                                    <path
+                                        d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z" />
+                                </svg>
+                                <span>by Ashikur</span>
+                                <span>/</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 576 512">
+                                    <path
+                                        d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z" />
+                                </svg>
+                                <span>2 Comments</span>
+                            </div>
+                            <div class="date">13 Jan, 21</div>
+
+                            <h3>Organically grow the holistic world view </h3>
+                        </div>
+
+                    </div>
+
+                    <div class="blog-item slide-in">
+                        <figure><img src="images/blog-post-3-370x316.jpg" alt="blog-post-1-370x316"></figure>
+
+                        <div class="blog-content">
+                            <div class="d-flex">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 496 512">
+                                    <path
+                                        d="M248 104c-53 0-96 43-96 96s43 96 96 96 96-43 96-96-43-96-96-96zm0 144c-26.5 0-48-21.5-48-48s21.5-48 48-48 48 21.5 48 48-21.5 48-48 48zm0-240C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 448c-49.7 0-95.1-18.3-130.1-48.4 14.9-23 40.4-38.6 69.6-39.5 20.8 6.4 40.6 9.6 60.5 9.6s39.7-3.1 60.5-9.6c29.2 1 54.7 16.5 69.6 39.5-35 30.1-80.4 48.4-130.1 48.4zm162.7-84.1c-24.4-31.4-62.1-51.9-105.1-51.9-10.2 0-26 9.6-57.6 9.6-31.5 0-47.4-9.6-57.6-9.6-42.9 0-80.6 20.5-105.1 51.9C61.9 339.2 48 299.2 48 256c0-110.3 89.7-200 200-200s200 89.7 200 200c0 43.2-13.9 83.2-37.3 115.9z" />
+                                </svg>
+                                <span>by Ashikur</span>
+                                <span>/</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 576 512">
+                                    <path
+                                        d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z" />
+                                </svg>
+                                <span>2 Comments</span>
+                            </div>
+
+                            <div class="date">13 Jan, 21</div>
+
+                            <h3>Override the Digital divide with additional</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter" aria-labelledby="Newsletter">
+            <div class="container">
+
+                <div class="newsletter-wrapper fade-in">
+                    <h2>Subscribe Our <br> <strong>Newsletter</strong> to Get New <br> Updates. </h2>
+
+                    <div class="newsletter-email">
+                        <input type="email" placeholder="Enter your email...">
+                        <button type="submit" class="btn-submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512">
+                                <path
+                                    d="M502.6 278.6l-128 128c-12.51 12.51-32.76 12.49-45.25 0c-12.5-12.5-12.5-32.75 0-45.25L402.8 288H32C14.31 288 0 273.7 0 255.1S14.31 224 32 224h370.8l-73.38-73.38c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0l128 128C515.1 245.9 515.1 266.1 502.6 278.6z" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-wrapper">
+
+                <div class="footer-items">
+                    <a href="index.html" class="ftr-logo"> <img src="images/logo-light.png" width="150"
+                            alt="logo light"></a>
+                    <a href="#" class="contact-link">needhelp@linoor.com</a>
+                    <a href="#" class="contact-link">888 999 0000</a>
+                    <p>855 road, Broklyn street <br> New York 600 </p>
+                </div>
+
+                <div class="footer-items">
+                    <h2>Explore</h2>
+                    <ul class="ftr-nav-list">
+                        <li class="ftr-items"><a href="#" class="ftr-links">About Us</a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">Meet Our Team</a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">Our Portfolio</a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">Latest News </a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <h2>Services</h2>
+                    <ul class="ftr-nav-list">
+                        <li class="ftr-items"><a href="#" class="ftr-links">Modern Desinging</a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">Marketing Strategy</a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">UI/UX Desinging</a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">App Development</a></li>
+                    </ul>
+                </div>
+                <div class="footer-items">
+                    <h2>Useful Links</h2>
+                    <ul class="ftr-nav-list">
+                        <li class="ftr-items"><a href="#" class="ftr-links">Support</a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">Privacy Policy</a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">Terms of Use</a></li>
+                        <li class="ftr-items"><a href="#" class="ftr-links">Help</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="scrollTop">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 320 512">
+                    <path
+                        d="M288.662 352H31.338c-17.818 0-26.741-21.543-14.142-34.142l128.662-128.662c7.81-7.81 20.474-7.81 28.284 0l128.662 128.662c12.6 12.599 3.676 34.142-14.142 34.142z" />
+                </svg>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="footer-bar" aria-labelledby="Footer bar">
+        <div class="container">
+            <div class="footer-bar-wrapper">
+                <p>© copyright 2021 by Layerdrops.com </p>
+                <div class="social-icons text-center">
+                    <a href="#" class="social-links">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 320 512">
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 448 512">
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 448 512">
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>
+                    </a>
+                    <a href="#" class="social-links">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 496 512">
+                            <path
+                                d="M496 256c0 137-111 248-248 248-25.6 0-50.2-3.9-73.4-11.1 10.1-16.5 25.2-43.5 30.8-65 3-11.6 15.4-59 15.4-59 8.1 15.4 31.7 28.5 56.8 28.5 74.8 0 128.7-68.8 128.7-154.3 0-81.9-66.9-143.2-152.9-143.2-107 0-163.9 71.8-163.9 150.1 0 36.4 19.4 81.7 50.3 96.1 4.7 2.2 7.2 1.2 8.3-3.3.8-3.4 5-20.3 6.9-28.1.6-2.5.3-4.7-1.7-7.1-10.1-12.5-18.3-35.3-18.3-56.6 0-54.7 41.4-107.6 112-107.6 60.9 0 103.6 41.5 103.6 100.9 0 67.1-33.9 113.6-78 113.6-24.3 0-42.6-20.1-36.7-44.8 7-29.5 20.5-61.3 20.5-82.6 0-19-10.2-34.9-31.4-34.9-24.9 0-44.9 25.7-44.9 60.2 0 22 7.4 36.8 7.4 36.8s-24.5 103.8-29 123.2c-5 21.4-3 51.6-.9 71.2C65.4 450.9 0 361.1 0 256 0 119 111 8 248 8s248 111 248 248z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

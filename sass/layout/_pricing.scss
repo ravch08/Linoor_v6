@@ -1,0 +1,152 @@
+#pricing {
+  z-index: 0;
+  position: relative;
+  margin-top: -25rem;
+  padding: 30rem 0 8rem 0;
+  background-color: $color-light-400;
+  background-image: url(../../images/pricing-2-bg-1-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+
+  .pricing-switch {
+    gap: 2rem;
+    margin: 2rem auto 6rem;
+    @extend .flexRow-center;
+
+    a {
+      color: $color-Dark-800;
+    }
+  }
+
+  .active {
+    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0rem);
+  }
+
+  .hide {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(8rem);
+  }
+
+  .switch {
+    width: 8rem;
+    height: 4rem;
+    display: flex;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: 5rem;
+    justify-content: flex-start;
+    background-color: darken($color: $color-light-400, $amount: 10%);
+
+    span {
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      border-radius: 50%;
+      background: $color-gradient1;
+      transition: transform 0.4s ease-in-out;
+    }
+  }
+}
+
+.show-yearly {
+  transform: translateX(4rem);
+}
+
+.pricing-content {
+  gap: 6rem;
+  @extend .flexColumn-around;
+}
+
+.pricing-monthly,
+.pricing-yearly {
+  gap: 2.5rem;
+  animation: fadeIn;
+  @extend .flexRow-between;
+  animation-duration: 1500ms;
+  animation-timing-function: ease-in-out;
+}
+
+.pricing-item {
+  width: 34rem;
+  max-width: 36rem;
+  padding: 4.5rem;
+  text-align: center;
+  min-height: 40rem;
+  border-radius: 0.8rem;
+  box-shadow: $box-shadow-sm;
+  @extend .flexColumn-around;
+  background-color: $color-light-100;
+  transition: background-color 0.4s ease-in-out;
+
+  h3 {
+    font-size: 5rem;
+    font-weight: 400;
+    color: $color-Dark-800;
+    transition: color 0.4s ease-in-out;
+  }
+
+  span {
+    color: $color-secondary;
+    letter-spacing: 0.15rem;
+  }
+
+  hr {
+    width: 100%;
+    height: 1px;
+    margin: 3rem 0;
+    opacity: 0.2;
+    background-color: grey;
+  }
+
+  li {
+    padding: 0.8rem;
+  }
+
+  .btn-gradient {
+    margin-top: 2.5rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+    margin-top: 2.5rem;
+    letter-spacing: 0.15rem;
+  }
+
+  &:hover {
+    background-color: $color-footerBar;
+
+    h3 {
+      color: $color-light-100;
+    }
+  }
+}
+
+// -------- MEDIA QUERIES --------------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+  .pricing-monthly,
+  .pricing-yearly {
+    flex-direction: column;
+  }
+
+  .pricing-item {
+    width: 32rem;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .pricing-monthly,
+  .pricing-yearly {
+    flex-wrap: wrap;
+  }
+
+  .pricing-item {
+    width: 30rem;
+  }
+}

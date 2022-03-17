@@ -1,0 +1,148 @@
+.feature-list {
+  gap: 2rem;
+  @extend .flexRow-between;
+
+  .feature-item {
+    padding: 2.5rem;
+    max-width: 32rem;
+    min-height: 40rem;
+    border-radius: 0.3rem;
+    @extend .flexColumn-around;
+    transition: border 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+
+    h3 {
+      font-size: $fs-h4;
+      color: $color-Dark-800;
+    }
+
+    .btn-arrow svg {
+      fill: $color-Dark-800 !important;
+    }
+
+    figure {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 0.5rem;
+      @extend .flexColumn-center;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    &:nth-child(1) {
+      border: 0.15rem solid lighten($color: $color-primary, $amount: 30%);
+
+      figure {
+        background-color: lighten($color: $color-primary, $amount: 30%);
+      }
+
+      svg {
+        fill: $color-primary;
+        transition: color 0.5s ease-in-out;
+      }
+
+      &:hover {
+        border: 0.15rem solid $color-primary;
+        box-shadow: $box-shadow-md;
+
+        figure {
+          background-color: $color-primary;
+        }
+
+        svg {
+          fill: $color-light-100;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      border: 0.15rem solid lighten($color: $color-secondary, $amount: 25%);
+
+      figure {
+        background-color: lighten($color: $color-secondary, $amount: 25%);
+      }
+
+      svg {
+        fill: $color-secondary;
+        transition: color 0.3s ease-in-out;
+      }
+
+      &:hover {
+        border: 0.15rem solid $color-secondary;
+        box-shadow: $box-shadow-md;
+
+        figure {
+          background-color: $color-secondary;
+        }
+
+        svg {
+          fill: $color-light-100;
+        }
+      }
+    }
+
+    &:nth-child(3) {
+      border: 0.15rem solid lighten($color: $color-tertiary, $amount: 30%);
+
+      figure {
+        background-color: lighten($color: $color-tertiary, $amount: 30%);
+      }
+
+      svg {
+        fill: $color-tertiary;
+        transition: color 0.3s ease-in-out;
+      }
+
+      &:hover {
+        border: 0.15rem solid $color-tertiary;
+        box-shadow: $box-shadow-md;
+
+        figure {
+          background-color: $color-tertiary;
+        }
+
+        svg {
+          fill: $color-light-100;
+        }
+      }
+    }
+
+    &:nth-child(4) {
+      border: 0.15rem solid lighten($color: $color-quarternary, $amount: 30%);
+
+      figure {
+        background-color: lighten($color: $color-quarternary, $amount: 30%);
+      }
+
+      svg {
+        fill: $color-quarternary;
+        transition: color 0.3s ease-in-out;
+      }
+
+      &:hover {
+        border: 0.15rem solid $color-quarternary;
+        box-shadow: $box-shadow-md;
+
+        figure {
+          background-color: $color-quarternary;
+        }
+
+        svg {
+          fill: $color-light-100;
+        }
+      }
+    }
+  }
+}
+
+// -------- MEDIA QUERIES --------------------------------------------------------------------------
+
+@media screen and (max-width: 768px) {
+  .feature-list {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .feature-list {
+    flex-wrap: wrap;
+  }
+}

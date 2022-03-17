@@ -1,0 +1,17 @@
+@mixin transition($attribute, $duration) {
+  transition: $attribute $duration ease-in-out;
+}
+
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin backgroundCover($url) {
+  background: "$url";
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

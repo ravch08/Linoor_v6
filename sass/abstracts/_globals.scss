@@ -1,0 +1,145 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* Inherits from body element */
+}
+
+html {
+  font-size: 62.5%;
+  /* Always use percentages. 1rem = 10px. */
+  scroll-behavior: smooth;
+  /* Prevent adjustments of font size after orientation changes in iO*/
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-size: 1.4rem;
+  color: $color-body;
+  overflow-x: hidden;
+  line-height: $lh-body;
+  font-family: $fm-body;
+  box-sizing: border-box;
+  background-color: white;
+
+  &::-webkit-scrollbar {
+    width: 0.8rem;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $color-scrollbar;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color-scrollThumb;
+  }
+}
+
+@supports (scrollbar-color: $color-scrollThumb $color-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: $color-scrollThumb $color-scrollbar;
+  }
+}
+
+// -- PROPERTY  --------------------------------------------------------------------
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: $lh-heading;
+  font-family: $fm-primary;
+}
+
+input,
+button,
+select,
+textarea {
+  font: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+ul:not(.browser-default) > li {
+  list-style: none;
+}
+
+a:not(.browser-default) {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+p {
+  font-size: $fs-body;
+}
+
+h1 {
+  margin: 1rem 0;
+  font-size: $fs-h1;
+}
+
+h2 {
+  font-size: $fs-h2;
+  font-weight: 400;
+  color: $color-Dark-800;
+}
+
+h3 {
+  font-size: $fs-h3;
+}
+
+h4 {
+  font-size: $fs-h4;
+}
+
+figure {
+  line-height: 0;
+}
+
+img {
+  height: auto;
+  line-height: 0;
+  max-width: 100%;
+  border-style: none;
+}
+
+small {
+  font-size: 80%;
+}
+
+/* OPTIONAL -- remove animations for people who've turned them off */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4.6rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 5rem 0;
+  }
+}

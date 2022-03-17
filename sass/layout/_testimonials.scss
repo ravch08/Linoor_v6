@@ -1,0 +1,98 @@
+#testimonials {
+  background-color: $color-light-400;
+
+  .swiper-slide {
+    padding: 4rem;
+    max-width: 310px;
+    position: relative;
+    height: fit-content;
+    background-color: $color-light-100;
+
+    figure {
+      overflow: hidden;
+      margin-right: 2rem;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    .swiper-author {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 2.8rem;
+    }
+
+    blockquote {
+      font-style: italic;
+      line-height: 1.7;
+    }
+  }
+
+  .quote {
+    position: absolute;
+    top: 16%;
+    right: 6%;
+    fill: $color-primary;
+  }
+}
+
+#newsletter {
+  padding: 10rem 0;
+  background-color: $color-secondary;
+  background-image: url(../../images/subscribe-two-bg-1-1.png);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position-x: right;
+}
+
+.newsletter-wrapper {
+  @extend .flexRow-between;
+
+  h2 {
+    color: $color-light-100;
+  }
+
+  .newsletter-email {
+    flex-basis: 40%;
+    position: relative;
+
+    input {
+      width: 100%;
+      border: none;
+      padding: 3rem;
+      outline: none;
+      border-radius: 5rem;
+    }
+  }
+}
+
+// -- MEDIA QUERIES -------------------------------------------------------------------
+
+@media screen and (max-width: 576px) {
+  #testimonials {
+    .swiper-slide {
+      max-width: 290px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newsletter-wrapper {
+    gap: 2rem;
+    text-align: center;
+    flex-direction: column;
+
+    .newsletter-email {
+      width: 100%;
+
+      input {
+        width: 100%;
+        border: none;
+        padding: 3rem;
+        border-radius: 5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.service-wrapper {
+  gap: 4rem;
+  padding: 1.5rem 0;
+  @extend .flexRow-between;
+
+  figure {
+    padding: 2rem;
+  }
+
+  .service-content {
+    width: 55%;
+
+    h3 {
+      font-weight: 300;
+      margin: 2.5rem 0;
+      color: $color-primary;
+    }
+
+    li {
+      padding: 1.2rem 0;
+      font-size: 1.6rem;
+    }
+
+    svg {
+      margin-right: 1rem;
+      fill: $color-secondary;
+      transform: translateY(0.2rem);
+    }
+
+    p {
+      margin: 2.5rem 0;
+    }
+  }
+
+  .service-progressbar {
+    display: flex;
+    margin-bottom: 5rem;
+    flex-direction: column;
+
+    label {
+      font-size: 1.8rem;
+      padding: 1.2rem 0 0.8rem;
+      color: $color-Dark-800;
+    }
+
+    progress[value] {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 100%;
+      border: none;
+      height: 1.2rem;
+      color: $color-primary;
+
+      &::-webkit-progress-bar {
+        border-radius: 1rem;
+        background-color: $color-light-800;
+      }
+
+      &::-webkit-progress-value {
+        border-radius: 1rem;
+        background-color: $color-primary;
+      }
+    }
+  }
+}
+
+// -------- MEDIA QUERIES --------------------------------------------------------------------------
+
+@media screen and (max-width: 1024px) {
+  .service-wrapper {
+    flex-direction: column;
+
+    &:nth-child(2) {
+      flex-direction: column-reverse;
+    }
+
+    .service-content {
+      width: 95%;
+    }
+  }
+}
