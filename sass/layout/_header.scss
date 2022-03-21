@@ -17,11 +17,6 @@ header {
   nav {
     margin-left: 8rem;
   }
-
-  .nav-brand img {
-    width: 12rem;
-  }
-
   .menu {
     width: 10%;
     display: flex;
@@ -44,6 +39,10 @@ header {
       background-color: lighten($color: $color-Dark-800, $amount: 50%);
     }
   }
+}
+
+.nav-brand img {
+  width: 12rem;
 }
 
 .sticky {
