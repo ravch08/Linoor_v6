@@ -1,3 +1,5 @@
+@use "../abstracts/helper" as h;
+
 .blog-wrapper {
   gap: 2rem;
   @extend .flexRow-between;
@@ -18,7 +20,7 @@
   position: relative;
 
   svg {
-    fill: $color-primary;
+    fill: h.$color-primary;
     margin-right: 0.3rem;
   }
 
@@ -33,9 +35,9 @@
   .blog-content {
     position: relative;
     padding: 2.5rem 2rem;
-    border: 0.1rem solid $color-light-400;
+    border: 0.1rem solid h.$color-light-400;
     border-top: none;
-    background-color: $color-light-100;
+    background-color: h.$color-light-100;
     transition: border 0.5s ease-in-out;
   }
 
@@ -45,7 +47,7 @@
     padding: 1rem 2rem 2rem;
     position: absolute;
     border-radius: 0.5rem;
-    background-color: $color-light-100;
+    background-color: h.$color-light-100;
   }
 
   &::after {
@@ -57,20 +59,20 @@
     left: 0;
     z-index: -1;
     border-radius: 0 0 0.6rem 0.6rem;
-    background-color: $color-light-400;
-    border: 0.2rem solid $color-light-400;
+    background-color: h.$color-light-400;
+    border: 0.2rem solid h.$color-light-400;
     transition: border 0.5s ease-in-out, background-color 0.5s ease-in-out;
   }
 
   &:hover {
     .blog-content {
-      border: 0.1rem solid $color-secondary;
+      border: 0.1rem solid h.$color-secondary;
       border-top: none;
     }
 
     &::after {
-      background-color: $color-secondary;
-      border: 0.2rem solid $color-secondary;
+      background-color: h.$color-secondary;
+      border: 0.2rem solid h.$color-secondary;
     }
   }
 }

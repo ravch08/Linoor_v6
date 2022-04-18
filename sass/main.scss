@@ -1,19 +1,12 @@
-@import "./abstracts/variables";
-@import "./abstracts/globals";
-@import "./abstracts/extends";
-@import "./abstracts/mixins";
-@import "./abstracts/utilities";
-@import "./abstracts/animations";
+@use "./components/buttons";
 
-@import "./components/buttons";
-
-@import "./layout/header";
-@import "./layout/banner";
-@import "./layout/features";
-@import "./layout/services";
-@import "./layout/projects";
-@import "./layout/pricing";
-@import "./layout/project-counter";
-@import "./layout/testimonials";
-@import "./layout/blog";
-@import "./layout/footer";
+@use "./layout/header";
+@use "./layout/banner";
+@use "./layout/features";
+@use "./layout/services";
+@use "./layout/projects";
+@use "./layout/pricing";
+@use "./layout/blog";
+@use "./layout/project-counter";
+@use "./layout/testimonials";
+@use "./layout/footer";

@@ -1,3 +1,5 @@
+@use "../abstracts/helper" as h;
+
 .feature-list {
   gap: 2rem;
   @extend .flexRow-between;
@@ -10,12 +12,12 @@
     @extend .flexColumn-around;
 
     h3 {
-      font-size: $fs-h4;
-      color: $color-Dark-800;
+      font-size: h.$fs-h4;
+      color: h.$color-Dark-800;
     }
 
     .btn-arrow svg {
-      fill: $color-Dark-800 !important;
+      fill: h.$color-Dark-800 !important;
     }
 
     figure {
@@ -27,105 +29,105 @@
     }
 
     &:nth-child(1) {
-      border: 0.15rem solid lighten($color: $color-primary, $amount: 30%);
+      border: 0.15rem solid lighten(h.$color-primary, 30%);
 
       figure {
-        background-color: lighten($color: $color-primary, $amount: 30%);
+        background-color: lighten(h.$color-primary, 30%);
       }
 
       svg {
-        fill: $color-primary;
+        fill: h.$color-primary;
         transition: color 0.5s ease-in-out;
       }
 
       &:hover {
-        border: 0.15rem solid $color-primary;
-        box-shadow: $box-shadow-md;
+        box-shadow: h.$box-shadow-md;
+        border: 0.15rem solid h.$color-primary;
 
         figure {
-          background-color: $color-primary;
+          background-color: h.$color-primary;
         }
 
         svg {
-          fill: $color-light-100;
+          fill: h.$color-light-100;
         }
       }
     }
 
     &:nth-child(2) {
-      border: 0.15rem solid lighten($color: $color-secondary, $amount: 25%);
+      border: 0.15rem solid lighten(h.$color-secondary, 25%);
 
       figure {
-        background-color: lighten($color: $color-secondary, $amount: 25%);
+        background-color: lighten(h.$color-secondary, 25%);
       }
 
       svg {
-        fill: $color-secondary;
+        fill: h.$color-secondary;
         transition: color 0.3s ease-in-out;
       }
 
       &:hover {
-        border: 0.15rem solid $color-secondary;
-        box-shadow: $box-shadow-md;
+        box-shadow: h.$box-shadow-md;
+        border: 0.15rem solid h.$color-secondary;
 
         figure {
-          background-color: $color-secondary;
+          background-color: h.$color-secondary;
         }
 
         svg {
-          fill: $color-light-100;
+          fill: h.$color-light-100;
         }
       }
     }
 
     &:nth-child(3) {
-      border: 0.15rem solid lighten($color: $color-tertiary, $amount: 30%);
+      border: 0.15rem solid lighten(h.$color-tertiary, 30%);
 
       figure {
-        background-color: lighten($color: $color-tertiary, $amount: 30%);
+        background-color: lighten(h.$color-tertiary, 30%);
       }
 
       svg {
-        fill: $color-tertiary;
+        fill: h.$color-tertiary;
         transition: color 0.3s ease-in-out;
       }
 
       &:hover {
-        border: 0.15rem solid $color-tertiary;
-        box-shadow: $box-shadow-md;
+        box-shadow: h.$box-shadow-md;
+        border: 0.15rem solid h.$color-tertiary;
 
         figure {
-          background-color: $color-tertiary;
+          background-color: h.$color-tertiary;
         }
 
         svg {
-          fill: $color-light-100;
+          fill: h.$color-light-100;
         }
       }
     }
 
     &:nth-child(4) {
-      border: 0.15rem solid lighten($color: $color-quarternary, $amount: 30%);
+      border: 0.15rem solid lighten(h.$color-quarternary, 30%);
 
       figure {
-        background-color: lighten($color: $color-quarternary, $amount: 30%);
+        background-color: lighten(h.$color-quarternary, 30%);
       }
 
       svg {
-        fill: $color-quarternary;
+        fill: h.$color-quarternary;
         transition: color 0.3s ease-in-out;
       }
 
       &:hover {
-        border: 0.15rem solid $color-quarternary;
-        box-shadow: $box-shadow-md;
+        box-shadow: h.$box-shadow-md;
+        border: 0.15rem solid h.$color-quarternary;
 
         figure {
-          background-color: $color-quarternary;
+          background-color: h.$color-quarternary;
         }
 
         svg {
-          fill: $color-light-100;
+          fill: h.$color-light-100;
         }
       }
     }

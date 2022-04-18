@@ -1,3 +1,5 @@
+@use "../abstracts/helper" as h;
+
 .counters {
   @extend .flexRow-between;
 
@@ -5,49 +7,49 @@
     width: 21rem;
     height: 21rem;
     border-radius: 50%;
-    box-shadow: $box-shadow-sm;
+    box-shadow: h.$box-shadow-sm;
     @extend .flexColumn-center;
     transition: box-shadow 0.3s ease-in-out, outline 0.3s ease-in-out;
 
     &:nth-child(1) {
-      outline: lighten($color: $color-primary, $amount: 28%) solid 0.8rem;
+      outline: lighten(h.$color-primary, 28%) solid 0.8rem;
       outline-offset: -2rem;
 
       p {
-        color: $color-primary;
+        color: h.$color-primary;
       }
     }
 
     &:nth-child(2) {
-      outline: lighten($color: $color-secondary, $amount: 28%) solid 0.8rem;
+      outline: lighten(h.$color-secondary, 28%) solid 0.8rem;
       outline-offset: -2rem;
 
       p {
-        color: $color-secondary;
+        color: h.$color-secondary;
       }
     }
 
     &:nth-child(3) {
-      outline: lighten($color: $color-tertiary, $amount: 28%) solid 0.8rem;
+      outline: lighten(h.$color-tertiary, 28%) solid 0.8rem;
       outline-offset: -2rem;
 
       p {
-        color: $color-tertiary;
+        color: h.$color-tertiary;
       }
     }
 
     &:nth-child(4) {
-      outline: lighten($color: $color-quarternary, $amount: 28%) solid 0.8rem;
+      outline: lighten(h.$color-quarternary, 28%) solid 0.8rem;
       outline-offset: -2rem;
 
       p {
-        color: $color-quarternary;
+        color: h.$color-quarternary;
       }
     }
 
     span {
       font-size: 4rem;
-      color: $color-Dark-800;
+      color: h.$color-Dark-800;
     }
 
     p {
@@ -57,22 +59,22 @@
     }
 
     &:hover {
-      box-shadow: $box-shadow-md;
+      box-shadow: h.$box-shadow-md;
 
       &:nth-child(1) {
-        outline: $color-primary solid 0.8rem;
+        outline: h.$color-primary solid 0.8rem;
       }
 
       &:nth-child(2) {
-        outline: $color-secondary solid 0.8rem;
+        outline: h.$color-secondary solid 0.8rem;
       }
 
       &:nth-child(3) {
-        outline: $color-tertiary solid 0.8rem;
+        outline: h.$color-tertiary solid 0.8rem;
       }
 
       &:nth-child(4) {
-        outline: $color-quarternary solid 0.8rem;
+        outline: h.$color-quarternary solid 0.8rem;
       }
     }
   }

@@ -1,17 +1,19 @@
+@use "../abstracts/variables" as v;
+
 .btn-gradient {
   border: none;
   cursor: pointer;
-  font-size: $fs-btn;
+  font-size: v.$fs-btn;
   padding: 2rem 4rem;
   border-radius: 0.5rem;
   display: inline-block;
-  color: $color-light-100;
-  background: $color-gradient1;
+  color: v.$color-light-100;
+  background: v.$color-gradient1;
   transition: background 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
 
   &:hover {
-    box-shadow: $box-shadow-md;
-    background: $color-gradient2;
+    box-shadow: v.$box-shadow-md;
+    background: v.$color-gradient2;
   }
 }
 
@@ -21,18 +23,18 @@
   background-color: transparent;
 
   svg {
-    fill: $color-Dark-800;
+    fill: v.$color-Dark-800;
   }
 }
 
 .btn-close {
   svg {
-    fill: $color-light-100;
+    fill: v.$color-light-100;
     transition: fill 0.4s ease-in-out, transform 0.4s ease-in-out;
   }
 
   &:hover svg {
-    fill: $color-secondary;
+    fill: v.$color-secondary;
     transform: rotate(90deg);
   }
 }
@@ -46,14 +48,14 @@
   top: 14%;
   right: 2%;
   border-radius: 3rem;
-  background-color: $color-Dark-400;
+  background-color: v.$color-Dark-400;
   transition: background-color 0.3s ease-in-out;
 
   svg {
-    fill: $color-light-100;
+    fill: v.$color-light-100;
   }
 
   &:hover {
-    background-color: darken($color: $color-Dark-400, $amount: 15%);
+    background-color: darken(v.$color-Dark-400, 15%);
   }
 }

@@ -1,3 +1,5 @@
+@use "../abstracts/helper" as h;
+
 #banner {
   padding: 0;
   height: 95vh;
@@ -116,7 +118,7 @@
     opacity: 0;
     font-weight: 300;
     visibility: hidden;
-    color: $color-Dark-800;
+    color: h.$color-Dark-800;
     transform: translateY(-15rem);
     max-width: 516px;
   }

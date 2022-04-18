@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as v;
+
 *,
 *::after,
 *::before {
@@ -20,10 +22,10 @@ body {
   padding: 0;
   min-height: 100vh;
   font-size: 1.4rem;
-  color: $color-body;
+  color: v.$color-body;
   overflow-x: hidden;
-  line-height: $lh-body;
-  font-family: $fm-body;
+  line-height: v.$lh-body;
+  font-family: v.$fm-body;
   box-sizing: border-box;
   background-color: white;
 
@@ -32,18 +34,18 @@ body {
   }
 
   &::-webkit-scrollbar-track {
-    background: $color-scrollbar;
+    background: v.$color-scrollbar;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: $color-scrollThumb;
+    background: v.$color-scrollThumb;
   }
 }
 
-@supports (scrollbar-color: $color-scrollThumb $color-scrollbar) {
+@supports (scrollbar-color: v.$color-scrollThumb v.$color-scrollbar) {
   * {
     scrollbar-width: thin;
-    scrollbar-color: $color-scrollThumb $color-scrollbar;
+    scrollbar-color: v.$color-scrollThumb v.$color-scrollbar;
   }
 }
 
@@ -53,8 +55,8 @@ h1,
 h2,
 h3,
 h4 {
-  line-height: $lh-heading;
-  font-family: $fm-primary;
+  line-height: v.$lh-heading;
+  font-family: v.$fm-primary;
 }
 
 input,
@@ -76,26 +78,26 @@ a:not(.browser-default) {
 }
 
 p {
-  font-size: $fs-body;
+  font-size: v.$fs-body;
 }
 
 h1 {
   margin: 1rem 0;
-  font-size: $fs-h1;
+  font-size: v.$fs-h1;
 }
 
 h2 {
-  font-size: $fs-h2;
+  font-size: v.$fs-h2;
   font-weight: 400;
-  color: $color-Dark-800;
+  color: v.$color-Dark-800;
 }
 
 h3 {
-  font-size: $fs-h3;
+  font-size: v.$fs-h3;
 }
 
 h4 {
-  font-size: $fs-h4;
+  font-size: v.$fs-h4;
 }
 
 figure {

@@ -1,3 +1,5 @@
+@use "../abstracts/helper" as h;
+
 #projects {
   position: relative;
   z-index: 1;
@@ -40,7 +42,7 @@
       height: 5rem;
       border-radius: 50%;
       @extend .flexRow-center;
-      background-color: $color-light-100;
+      background-color: h.$color-light-100;
       position: absolute;
       top: -12%;
       right: 2%;
@@ -48,7 +50,7 @@
       font-size: 2rem;
       opacity: 0;
       cursor: pointer;
-      box-shadow: $box-shadow-md;
+      box-shadow: h.$box-shadow-md;
       transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
     }
 
@@ -73,7 +75,7 @@
     left: 0;
     z-index: 9;
     padding: 2rem;
-    color: $color-light-100;
+    color: h.$color-light-100;
 
     small {
       padding-bottom: 1rem;

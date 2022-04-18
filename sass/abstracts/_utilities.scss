@@ -1,10 +1,11 @@
-// CLASS DEFAULTS ----------------------------------------------------------------------------------
+@use "../abstracts/variables" as v;
+@use "../abstracts/extends" as e;
 
 .container {
   width: 85%;
   height: auto;
   margin: 0 auto;
-  max-width: $width-container;
+  max-width: v.$width-container;
 }
 
 .container-semifluid {
@@ -26,10 +27,10 @@
   @extend .flexRow-center;
 
   svg {
-    fill: $color-light-100;
+    fill: v.$color-light-100;
     transition: fill 0.3s ease-in-out;
     &:hover {
-      fill: $color-primary;
+      fill: v.$color-primary;
     }
   }
 }
@@ -59,7 +60,7 @@
 }
 
 section {
-  padding: $section-padding 0;
+  padding: v.$section-padding 0;
 }
 
 .pr-05 {

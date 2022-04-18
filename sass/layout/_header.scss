@@ -1,3 +1,5 @@
+@use "../abstracts/helper" as h;
+
 header {
   width: 100%;
   position: fixed;
@@ -29,14 +31,14 @@ header {
     }
 
     svg {
-      fill: $color-Dark-800;
+      fill: h.$color-Dark-800;
     }
 
     &::before {
       content: "";
       width: 0.1rem;
       height: 5rem;
-      background-color: lighten($color: $color-Dark-800, $amount: 50%);
+      background-color: lighten(h.$color-Dark-800, 50%);
     }
   }
 }
@@ -47,8 +49,8 @@ header {
 
 .sticky {
   padding: 0;
-  box-shadow: $box-shadow-sm;
-  background-color: $color-light-100;
+  box-shadow: h.$box-shadow-sm;
+  background-color: h.$color-light-100;
 }
 
 .nav-list {
@@ -68,7 +70,7 @@ header {
       left: 0;
       transform: scale(0);
       transform-origin: center;
-      background-color: $color-primary;
+      background-color: h.$color-primary;
       transition: transform 0.4s ease-in-out;
     }
 
@@ -86,10 +88,10 @@ header {
 
   .nav-link {
     padding: 4rem 0;
-    font-size: $fs-body;
+    font-size: h.$fs-body;
     position: relative;
     letter-spacing: 0.1rem;
-    color: $color-text-primary;
+    color: h.$color-text-primary;
     border-bottom: 0.2rem solid transparent;
   }
 
@@ -103,8 +105,8 @@ header {
     border-radius: 0.4rem;
     @extend .flexColumn-start;
     transform: translateY(3rem);
-    box-shadow: $box-shadow-md;
-    background-color: $color-light-100;
+    box-shadow: h.$box-shadow-md;
+    background-color: h.$color-light-100;
     transition: transform 0.3s ease-in-out, visibility 0.3s ease-in-out,
       opacity 0.3s ease-in-out;
 
@@ -113,12 +115,12 @@ header {
     }
 
     .dropdown-link {
-      color: $color-Dark-400;
+      color: h.$color-Dark-400;
       padding: 0.8rem 2.5rem;
       transition: color 0.4s ease-in-out;
 
       &:hover {
-        color: $color-primary;
+        color: h.$color-primary;
       }
     }
   }
@@ -136,7 +138,7 @@ header {
   .line {
     width: 100%;
     height: 0.1rem;
-    background-color: $color-Dark-400;
+    background-color: h.$color-Dark-400;
 
     &:nth-child(2) {
       width: 75%;
@@ -166,7 +168,7 @@ header {
   top: 0;
   width: 35rem;
   height: 100vh;
-  background-color: $color-footerBar;
+  background-color: h.$color-footerBar;
   transition: left 0.4s ease-in-out 0.6s;
 
   .sidebar-wrapper {
@@ -187,11 +189,11 @@ header {
       padding: 0.4rem 0;
       font-size: 1.4rem;
       letter-spacing: 0.1rem;
-      color: $color-light-400;
+      color: h.$color-light-400;
       transition: color 0.4s ease-in-out;
 
       &:hover {
-        color: $color-primary;
+        color: h.$color-primary;
       }
     }
   }
@@ -218,7 +220,7 @@ header {
       figure {
         padding: 0.8rem;
         border-radius: 0.2rem;
-        background-color: $color-primary;
+        background-color: h.$color-primary;
       }
     }
 
@@ -226,15 +228,15 @@ header {
       width: 100%;
       font-size: 2.5rem;
       padding: 1rem 0;
-      color: $color-light-800;
+      color: h.$color-light-800;
       @extend .flexRow-between;
       text-transform: uppercase;
-      font-family: $fm-secondary;
+      font-family: h.$fm-secondary;
       transition: color 0.4s ease-in-out;
       border-top: 0.1rem solid #88888834;
 
       &:hover {
-        color: $color-primary;
+        color: h.$color-primary;
       }
     }
   }

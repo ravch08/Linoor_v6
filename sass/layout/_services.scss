@@ -1,3 +1,5 @@
+@use "../abstracts/helper" as h;
+
 .service-wrapper {
   gap: 4rem;
   padding: 1.5rem 0;
@@ -13,7 +15,7 @@
     h3 {
       font-weight: 300;
       margin: 2.5rem 0;
-      color: $color-primary;
+      color: h.$color-primary;
     }
 
     li {
@@ -23,7 +25,7 @@
 
     svg {
       margin-right: 1rem;
-      fill: $color-secondary;
+      fill: h.$color-secondary;
       transform: translateY(0.2rem);
     }
 
@@ -40,7 +42,7 @@
     label {
       font-size: 1.8rem;
       padding: 1.2rem 0 0.8rem;
-      color: $color-Dark-800;
+      color: h.$color-Dark-800;
     }
 
     progress[value] {
@@ -50,16 +52,16 @@
       width: 100%;
       border: none;
       height: 1.2rem;
-      color: $color-primary;
+      color: h.$color-primary;
 
       &::-webkit-progress-bar {
         border-radius: 1rem;
-        background-color: $color-light-800;
+        background-color: h.$color-light-800;
       }
 
       &::-webkit-progress-value {
         border-radius: 1rem;
-        background-color: $color-primary;
+        background-color: h.$color-primary;
       }
     }
   }

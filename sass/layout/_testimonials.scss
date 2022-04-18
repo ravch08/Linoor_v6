@@ -1,12 +1,14 @@
+@use "../abstracts/helper" as h;
+
 #testimonials {
-  background-color: $color-light-400;
+  background-color: h.$color-light-400;
 
   .swiper-slide {
     padding: 4rem;
     max-width: 310px;
     position: relative;
     height: fit-content;
-    background-color: $color-light-100;
+    background-color: h.$color-light-100;
 
     figure {
       overflow: hidden;
@@ -34,13 +36,13 @@
     position: absolute;
     top: 16%;
     right: 6%;
-    fill: $color-primary;
+    fill: h.$color-primary;
   }
 }
 
 #newsletter {
   padding: 10rem 0;
-  background-color: $color-secondary;
+  background-color: h.$color-secondary;
   background-image: url(../../images/subscribe-two-bg-1-1.png);
   background-repeat: no-repeat;
   background-size: initial;
@@ -51,7 +53,7 @@
   @extend .flexRow-between;
 
   h2 {
-    color: $color-light-100;
+    color: h.$color-light-100;
   }
 
   .newsletter-email {
