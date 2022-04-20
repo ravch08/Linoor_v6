@@ -137,17 +137,15 @@ const swiperBanner = new Swiper('#swiper-banner', {
 
 const swiperSponser = new Swiper('#swiper-sponser', {
 
+    init: true,
     loop: true,
+    speed: 1500,
     keyboard: true,
+    loopedSlides: 50,
     spaceBetween: 80,
-    slidesPerView: "5",
+    grabCursor: true,
     centeredSlides: true,
-
-    breakpoints: {
-        100: { slidesPerView: 1 },
-        460: { slidesPerView: 3 },
-        860: { slidesPerView: 5 }
-    },
+    slidesPerView: "auto",
 
     autoplay: {
         delay: 2500,
@@ -163,15 +161,15 @@ const swiperSponser = new Swiper('#swiper-sponser', {
 
 const swiperTestimonial = new Swiper('#swiper-testimonial', {
 
+    init: true,
     loop: true,
+    speed: 1500,
+    keyboard: true,
+    spaceBetween: 30,
+    loopedSlides: 50,
+    grabCursor: true,
     centeredSlides: true,
-
-    breakpoints: {
-        350: { slidesPerView: 1, spaceBetween: 20 },
-        1024: { slidesPerView: 2, spaceBetween: 30 },
-        1400: { slidesPerView: 3, spaceBetween: 52 },
-        1920: { slidesPerView: 4, spaceBetween: 30 },
-    },
+    slidesPerView: "auto",
 
     autoplay: {
         delay: 2500,
