@@ -33,7 +33,7 @@ const headerObserver = new IntersectionObserver(entries => {
         if (!entry.isIntersecting) {
             header.classList.add('sticky');
         } else {
-            header.classList.remove('sticky')
+            header.classList.remove('sticky');
         }
     });
 }, options);
