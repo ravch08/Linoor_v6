@@ -19,97 +19,97 @@ const monthlyPricing = document.querySelector('.pricing-monthly');
 // ----- Intersection Observer -------------------------------------------------------------------
 
 const options = {
-    threshold: 1
+	threshold: 1
 };
 
 const appearOptions = {
-    threshold: 0.7,
-    rootMargin: '-100px 0px -100px 0px'
+	threshold: 0.7,
+	rootMargin: '-100px 0px -100px 0px'
 };
 
 const headerObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+	entries.forEach(entry => {
 
-        if (!entry.isIntersecting) {
-            header.classList.add('sticky');
-        } else {
-            header.classList.remove('sticky');
-        }
-    });
+		if (!entry.isIntersecting) {
+			header.classList.add('sticky');
+		} else {
+			header.classList.remove('sticky');
+		}
+	});
 }, options);
 
 const scrollObserver = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
+	entries.forEach(entry => {
 
-        if (!entry.isIntersecting) {
-            scrollTop.classList.remove('scaleDown');
-        } else {
-            scrollTop.classList.add('scaleDown');
-        }
-    });
+		if (!entry.isIntersecting) {
+			scrollTop.classList.remove('scaleDown');
+		} else {
+			scrollTop.classList.add('scaleDown');
+		}
+	});
 }, options);
 
 let appearObserver = new IntersectionObserver(function (entries) {
 
-    entries.forEach(entry => {
+	entries.forEach(entry => {
 
-        if (!entry.isIntersecting) {
-            return;
-        } else {
-            entry.target.classList.add('appear');
-            appearObserver.unobserve(entry.target);
-        }
-    });
+		if (!entry.isIntersecting) {
+			return;
+		} else {
+			entry.target.classList.add('appear');
+			appearObserver.unobserve(entry.target);
+		}
+	});
 }, appearOptions);
 
 headerObserver.observe(bannerSection);
 scrollObserver.observe(bannerSection);
 
 fadeIns.forEach(fadeIn => {
-    appearObserver.observe(fadeIn);
+	appearObserver.observe(fadeIn);
 });
 
 slideIns.forEach(slideIn => {
-    appearObserver.observe(slideIn);
+	appearObserver.observe(slideIn);
 });
 
 
 // ----- Event Listeners  -------------------------------------------------------------------
 
 const openSidebar = () => {
-    sidebar.style.left = "0";
-    overlay.style.left = "0";
+	sidebar.style.left = "0";
+	overlay.style.left = "0";
 };
 
 const closeSidebar = () => {
-    sidebar.style.left = "-35rem";
-    overlay.style.left = "-100%";
+	sidebar.style.left = "-35rem";
+	overlay.style.left = "-100%";
 };
 
 scrollTop.addEventListener('click', () => {
 
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
+	window.scrollTo({
+		top: 0,
+		behavior: "smooth"
+	});
 });
 
 priceSwitch.addEventListener('click', () => {
 
-    priceSwitchRound.classList.toggle('show-yearly');
+	priceSwitchRound.classList.toggle('show-yearly');
 
-    if (monthlyPricing.classList.contains('active')) {
-        monthlyPricing.classList.remove('active');
-        yearlyPricing.classList.add('active');
-        yearlyPricing.classList.remove('hide');
-        monthlyPricing.classList.add('hide');
+	if (monthlyPricing.classList.contains('active')) {
+		monthlyPricing.classList.remove('active');
+		yearlyPricing.classList.add('active');
+		yearlyPricing.classList.remove('hide');
+		monthlyPricing.classList.add('hide');
 
-    } else if (monthlyPricing.classList.contains('hide')) {
-        monthlyPricing.classList.remove('hide');
-        yearlyPricing.classList.add('hide');
-        yearlyPricing.classList.remove('active');
-        monthlyPricing.classList.add('active');
-    }
+	} else if (monthlyPricing.classList.contains('hide')) {
+		monthlyPricing.classList.remove('hide');
+		yearlyPricing.classList.add('hide');
+		yearlyPricing.classList.remove('active');
+		monthlyPricing.classList.add('active');
+	}
 });
 
 overlay.addEventListener('click', closeSidebar);
@@ -121,64 +121,82 @@ closeSidebarBtn.addEventListener('click', closeSidebar);
 
 const swiperBanner = new Swiper('#swiper-banner', {
 
-    loop: true,
-    speed: 1000,
-    effect: "fade",
-    keyboard: true,
-    spaceBetween: 80,
-    slidesPerView: "1",
-    centeredSlides: true,
+	loop: true,
+	speed: 1000,
+	effect: "fade",
+	keyboard: true,
+	spaceBetween: 80,
+	slidesPerView: "1",
+	centeredSlides: true,
 
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    }
+	autoplay: {
+		delay: 5000,
+		disableOnInteraction: false,
+	}
 });
 
 const swiperSponser = new Swiper('#swiper-sponser', {
 
-    init: true,
-    loop: true,
-    speed: 1500,
-    keyboard: true,
-    loopedSlides: 50,
-    spaceBetween: 80,
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
+	init: true,
+	loop: true,
+	speed: 1500,
+	keyboard: true,
+	loopedSlides: 50,
+	spaceBetween: 80,
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: "auto",
 
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
 
-    pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-        clickable: 'true'
-    }
+	pagination: {
+		el: '.swiper-pagination',
+		dynamicBullets: true,
+		clickable: 'true'
+	}
 });
 
 const swiperTestimonial = new Swiper('#swiper-testimonial', {
 
-    init: true,
-    loop: true,
-    speed: 1500,
-    keyboard: true,
-    spaceBetween: 30,
-    loopedSlides: 50,
-    grabCursor: true,
-    centeredSlides: true,
-    slidesPerView: "auto",
+	init: true,
+	loop: true,
+	speed: 1500,
+	keyboard: true,
+	spaceBetween: 30,
+	loopedSlides: 50,
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: "auto",
 
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
+	autoplay: {
+		delay: 2500,
+		disableOnInteraction: false,
+	},
 
-    pagination: {
-        el: '.swiper-pagination',
-        dynamicBullets: true,
-        clickable: 'true'
-    }
+	pagination: {
+		el: '.swiper-pagination',
+		dynamicBullets: true,
+		clickable: 'true'
+	}
 });
+
+const dropdowns = document.querySelectorAll('.sidebar-item');
+const dropdownMenus = document.querySelectorAll('.dropdown-sidemenu');
+
+dropdowns.forEach(dropdown => {
+
+	dropdown.addEventListener('click', e => {
+
+		const dropdownMenu = dropdown.querySelector('.dropdown-sidemenu');
+
+		// dropdownMenu.classList.toggle('show-menu');
+		dropdown.classList.toggle('show-menu');
+
+		// let dropdownParent = e.target.parentElement;
+		// console.log(dropdownParent);
+
+	})
+})
