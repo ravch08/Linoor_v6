@@ -8,12 +8,16 @@ const slideIns = document.querySelectorAll('.slide-in');
 const bannerSection = document.querySelector('#banner');
 const overlay = document.querySelector('.sidebar-overlay');
 const closeSidebarBtn = document.querySelector('.btn-close')
+const dropdowns = document.querySelectorAll('.sidebar-item');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 
 const priceSwitch = document.querySelector('.switch');
 const yearlyPricing = document.querySelector('.pricing-yearly');
 const priceSwitchRound = document.querySelector('.slider-round');
 const monthlyPricing = document.querySelector('.pricing-monthly');
+
+
+dropdowns.forEach(dropdown => dropdown.addEventListener('click', () => dropdown.classList.toggle('show-menu')));
 
 
 // ----- Intersection Observer -------------------------------------------------------------------
@@ -182,21 +186,3 @@ const swiperTestimonial = new Swiper('#swiper-testimonial', {
 		clickable: 'true'
 	}
 });
-
-const dropdowns = document.querySelectorAll('.sidebar-item');
-const dropdownMenus = document.querySelectorAll('.dropdown-sidemenu');
-
-dropdowns.forEach(dropdown => {
-
-	dropdown.addEventListener('click', e => {
-
-		const dropdownMenu = dropdown.querySelector('.dropdown-sidemenu');
-
-		// dropdownMenu.classList.toggle('show-menu');
-		dropdown.classList.toggle('show-menu');
-
-		// let dropdownParent = e.target.parentElement;
-		// console.log(dropdownParent);
-
-	})
-})
